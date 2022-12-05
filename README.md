@@ -20,4 +20,8 @@ $ cd termux-bashrc && cp bash.bashrc /data/data/com.termux/files/usr/etc && exit
 ```
  4. Done. Now restart Termux.
  
+## Usage:
 
+- Type `edit-bashrc` to edit and view the file.
+- You can change username and default editor by changing variables in #Global.
+- You can also customize prompt colors and symbol by changing preferred variables in #Prompt.
