@@ -3,7 +3,7 @@
 # Termux bash.bashrc                  #
 # Modified by: KNIGHTFALL             #
 #                                     #
-# Last modified: 2022/12/04           #
+# Last modified: 2022/12/05           #
 #                                     #
 #######################################
 
