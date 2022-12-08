@@ -23,5 +23,5 @@ $ cd termux-bashrc && cp bash.bashrc /data/data/com.termux/files/usr/etc && exit
 ## Usage:
 
 - Type `edit-bashrc` to edit and view the file.
-- You can change username and default editor by changing variables in #Global.
-- You can also customize prompt colors and symbol by changing preferred variables in #Prompt.
+- You can change username and default editor by changing variables in # Global.
+- You can also customize prompt color scheme and symbol by changing preferred variables in # Prompt.
