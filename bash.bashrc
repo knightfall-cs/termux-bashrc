@@ -7,16 +7,16 @@
 #                                     #
 #######################################
 
-#### Global variables ###########################
+#### Global variables #################
 
-# User
+# User name
 #change your user name here
 user_name="termux"
 
 # Default editor
 editor="vim"
 
-#### Environment variables ###########################
+#### Environment variables ############
 
 # `grep default` highlight color
 export GREP_COLOR="1;32"
