@@ -14,7 +14,7 @@
 user_name="termux"
 
 # Default editor
-editor="vim"
+editor="nano"
 
 #### Environment variables ############
 
@@ -27,7 +27,7 @@ export MANPAGER="less -R --use-color -Dd+g -Du+b"
 # EDITOR
 export EDITOR=$editor
 export SUDO_EDITOR=$editor
-export VISUAL="nvim"
+export VISUAL="vim"
 
 # USER
 export USER=$user_name
@@ -84,9 +84,9 @@ fi
 
 # common commands
 alias ..='cd ..'
-alias ....='cd ../..'
-alias ......='cd ../../..'
-alias ........='cd ../../../..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias lm='ls | more'
 alias ll='ls -lFh'
 alias la='ls -alFh --group-directories-first'
