@@ -113,9 +113,11 @@ alias cputemp='sensors | grep Core'
 # applications shortcuts
 alias myip='curl -s -m 5 https://ipleak.net/json/'
 alias e=$editor
+alias p='python3'
 alias w3mduck='w3m https://duckduckgo.com'
 alias ngrok='/data/data/com.termux/files/home/./ngrok'
 alias edit-bashrc=$editor' /data/data/com.termux/files/usr/etc/bash.bashrc'
+alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
 
 #### Functions ########################
 
