@@ -8,15 +8,15 @@ Custom termux bash.bashrc file with preset aliases and terminal splash screen.
 
 1. Clone the repository.
 ```
- $ cd $HOME && git clone https://github.com/knightfall-cs/termux-bashrc.git
+cd $HOME && git clone https://github.com/knightfall-cs/termux-bashrc.git
 ```
 2. Backup your current .bashrc file.
 ```
-$ cd /data/data/com.termux/files/usr/etc && cp -v bash.bashrc $HOME/termux-bashrc/backup/ && cd -
+cd /data/data/com.termux/files/usr/etc && cp -v bash.bashrc $HOME/termux-bashrc/backup/ && cd -
 ```
 3. Copy the bash.bashrc file to your .../usr/etc directory.
 ```
-$ cd termux-bashrc && cp bash.bashrc /data/data/com.termux/files/usr/etc && exit
+cd termux-bashrc && cp bash.bashrc /data/data/com.termux/files/usr/etc && exit
 ```
  4. Done. Now restart Termux.
  
