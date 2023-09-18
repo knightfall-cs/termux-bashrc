@@ -63,13 +63,13 @@ shopt -s autocd
 
 #### Prompt ###########################
 sym="㉿" #symbol of prompt
-bar_c="34" #color of bars
-name_c="37" #color of user & host
-end_c="37" #color of prompt end
-dir_c="32" #color of current directory
+bar_cr="34" #color of bars
+name_cr="37" #color of user & host
+end_cr="37" #color of prompt end
+dir_cr="36" #color of current directory
 
-PS1='\[\033[0;${bar_c}m\]┌──(\[\033[1;37m\]${user_name}${sym}\h\[\033[0;${bar_c}m\])-[\[\033[0;${dir_c}m\]\w\[\033[0;${bar_c}m\]]
-\[\033[0;${bar_c}m\]└─\[\033[1;${end_c}m\]\$\[\033[0m\] '
+PS1='\[\033[0;${bar_cr}m\]┌──(\[\033[1;${name_cr}m\]${user_name}${sym}\h\[\033[0;${bar_cr}m\])-[\[\033[0;${dir_cr}m\]\w\[\033[0;${bar_cr}m\]]
+\[\033[0;${bar_cr}m\]└─\[\033[1;${end_cr}m\]\$\[\033[0m\] '
 
 #### Aliases ##########################
 
@@ -87,6 +87,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 alias lm='ls | more'
 alias ll='ls -lFh'
 alias la='ls -alFh --group-directories-first'
@@ -101,6 +104,8 @@ alias cpr='cp --preserve=all -R'
 alias cpp='rsync -ahW --info=progress2'
 alias cs='printf "\033c"'
 alias q='exit'
+alias c='clear'
+alias count='find . -type f | wc -l'
 alias fbig="find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16"
 alias randir='mkdir -p ./$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 8)/$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)/'
 
@@ -117,7 +122,14 @@ alias p='python3'
 alias w3mduck='w3m https://duckduckgo.com'
 alias ngrok='/data/data/com.termux/files/home/./ngrok'
 alias edit-bashrc=$editor' /data/data/com.termux/files/usr/etc/bash.bashrc'
+alias timenow='date +"%T"'
+alias datenow='date +"%d-%m-%Y"'
+alias untar='tar -zxvf '
+alias wget='wget -c '
+alias getpass="openssl rand -base64 20"
+alias www='python -m SimpleHTTPServer 8000'
 alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
+
 
 #### Functions ########################
 
