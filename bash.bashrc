@@ -84,9 +84,7 @@ fi
 
 # common commands
 alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
+alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
@@ -106,8 +104,8 @@ alias cs='printf "\033c"'
 alias q='exit'
 alias c='clear'
 alias count='find . -type f | wc -l'
-alias fbig="find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16"
-alias randir='mkdir -p ./$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 8)/$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)/'
+alias fbig='find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16'
+alias randir='mkdir -p ./$(cat /dev/urandom | tr -cd 'a-z' | head -c 4)/$(cat /dev/urandom | tr -cd 'a-z' | head -c 4)/'
 
 # memory/CPU
 alias df='df -Tha --total'
@@ -126,7 +124,7 @@ alias timenow='date +"%T"'
 alias datenow='date +"%d-%m-%Y"'
 alias untar='tar -zxvf '
 alias wget='wget -c '
-alias getpass="openssl rand -base64 20"
+alias getpass='openssl rand -base64 20'
 alias phttp='python -m http.server 8000'
 alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
 
