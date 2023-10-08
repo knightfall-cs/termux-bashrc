@@ -124,7 +124,7 @@ alias timenow='date +"%T"'
 alias datenow='date +"%d-%m-%Y"'
 alias untar='tar -zxvf '
 alias wget='wget -c '
-alias getpass='openssl rand -base64 20'
+alias genpass='openssl rand -base64 12'
 alias phttp='python -m http.server 8000'
 alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
 
