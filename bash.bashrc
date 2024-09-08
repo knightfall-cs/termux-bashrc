@@ -104,7 +104,7 @@ alias cs='printf "\033c"'
 alias q='exit'
 alias c='clear'
 alias count='find . -type f | wc -l'
-alias fbig='find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16'
+alias fbig="find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16"
 alias randir='mkdir -p ./$(cat /dev/urandom | tr -cd 'a-z' | head -c 4)/$(cat /dev/urandom | tr -cd 'a-z' | head -c 4)/'
 
 # memory/CPU
