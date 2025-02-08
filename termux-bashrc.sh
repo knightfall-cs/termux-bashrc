@@ -3,7 +3,6 @@
 # Clone the repository.
 are_backup=1
 its_installed=1
-cd $HOME && git clone https://github.com/knightfall-cs/termux-bashrc.git
 
 # Backup your current .bashrc file.
 
