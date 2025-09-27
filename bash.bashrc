@@ -82,6 +82,11 @@ if [[ -x /usr/bin/dircolors ]]; then
     alias ip='ip -color'
 fi
 
+# go back to previous directory when entering '--'
+--() {
+  cd -
+}
+
 # common commands
 alias ..='cd ..'
 alias .2='cd ../..'
