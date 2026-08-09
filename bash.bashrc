@@ -3,8 +3,6 @@
 # Termux bash.bashrc                  #
 # Modified by: KNIGHTFALL             #
 #                                     #
-# Last modified: 2023/09/18           #
-#                                     #
 #######################################
 
 #### Global variables #################
@@ -129,6 +127,9 @@ alias genpass='openssl rand -base64 12'
 alias phttp='python -m http.server 8000'
 alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
 alias dnstest='while true; do dig +short google.com; sleep 2; done'
+alias ytd='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt'
+alias ytdmp4='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt -S "res,ext:mp4:m4a" --recode mp4'
+alias ytdmp3='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt -f bestaudio -x --audio-format mp3 --audio-quality 0'
 
 #### Functions ########################
 
