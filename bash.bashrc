@@ -31,6 +31,7 @@ export VISUAL="vim"
 export USER=$user_name
 
 # Path
+export PATH="$PREFIX/bin:$HOME/.local/bin"
 export ETC="/data/data/com.termux/files/usr/etc"
 
 #### History settings #################
