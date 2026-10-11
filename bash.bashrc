@@ -114,11 +114,8 @@ alias psa='ps auxf'
 alias cputemp='sensors | grep Core'
 
 # applications shortcuts
-alias myip='curl -s -m 5 https://ipleak.net/json/'
 alias e=$editor
 alias p='python3'
-alias w3mduck='w3m https://duckduckgo.com'
-alias ngrok='/data/data/com.termux/files/home/./ngrok'
 alias edit-bashrc=$editor' /data/data/com.termux/files/usr/etc/bash.bashrc'
 alias timenow='date +"%T"'
 alias datenow='date +"%d-%m-%Y"'
@@ -126,11 +123,12 @@ alias untar='tar -zxvf '
 alias wget='wget -c '
 alias genpass='openssl rand -base64 12'
 alias phttp='python -m http.server 8000'
-alias kn='python /data/data/com.termux/files/home/keynote/keynote.py' # https://github.com/knightfall-cs/keynote
+alias myip='curl -s -m 5 https://ipleak.net/json/'
 alias dnstest='while true; do dig +short google.com; sleep 2; done'
 alias ytd='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt'
 alias ytdmp4='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt -S "res,ext:mp4:m4a" --recode mp4'
 alias ytdmp3='yt-dlp --cookies ~/yt-dlp/yt_cookies.txt -f bestaudio -x --audio-format mp3 --audio-quality 0'
+alias agy-yolo='agy --dangerously-skip-permissions'
 
 #### Functions ########################
 
